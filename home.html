@@ -1,39 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Issue Tracker | Home</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/github-logo.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon" />
     <!-- tailwind+daisyUI -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
 
     <style>
-        *{
-             font-family: "Geist", sans-serif;
+        * {
+            font-family: "Geist", sans-serif;
         }
     </style>
-  </head>
-  <body>
-    <section>
-        
-    </section>
-  </body>
+</head>
+
+<body class="bg-[#F8FAFC]">
+    <header>
+        <div class="navbar bg-white shadow-sm px-10">
+            <div class="flex-1">
+                <div class="flex items-center gap-2">
+                    <div class="w-10"><img src="./assets/github-logo.png" alt=""></div>
+                    <h1 class="text-xl font-semibold">Github Issues Tracker</h1>
+
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <input id="search-input" type="search" placeholder="Search issues..."
+                    class="input input-bordered w-24 md:w-auto outline-none" />
+                <button id="search-btn" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <main class="w-10/12 mx-auto my-10 h-screen">
+        <section class="w-full p-6 mb-4 bg-white shadow-md rounded-md">
+          <div class="space-x-2">
+                <button class="btn btn-primary w-[120px]">All</button>
+                <button class="btn btn-outline w-[120px]">Open</button>
+                <button class="btn btn-outline w-[120px]">Closed</button>
+            </div>
+        </section>
+        <section class="w-full shadow-md rounded-md">
+            <div class=" bg-white p-6 shadow-sm flex justify-between items-center rounded-md">
+                <div class="flex items-center gap-2">
+                <div class="p-2 rounded-full bg-purple-100"><img src="./assets/Aperture.png" alt=""></div>
+                <div>
+                    <h3 class="text-[20px] font-semibold"><span>50</span> Issues</h3>
+                    <p class="text-md text-gray-500">Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2">
+                    <div class="status status-success status-lg"></div>
+                    <span class="font-semibold"> Open</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="status status-primary status-lg"></div>
+                    <span class="font-semibold"> Closed</span>
+                </div>
+
+            </div></div>
+            
+            <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+                
+            </section>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
