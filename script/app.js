@@ -7,11 +7,6 @@ function toggleStyle(id) {
   filterBtns.forEach((btn) => {
     btn.classList.remove("btn-primary");
     btn.classList.add("btn-outline");
-
-    btn.addEventListener("click", () => {
-      const status = btn.innerText.toLowerCase();
-      loadIssuesCard(status);
-    });
   });
 
   const selected = document.getElementById(id);
@@ -27,6 +22,13 @@ const loadIssuesCard = async (status) => {
 };
 
 loadIssuesCard("all");
+
+filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const status = btn.innerText.toLowerCase();
+      loadIssuesCard(status);
+    });
+  });
 
 const createElements =(arr)=>{
     const htmlEliments = arr.map((el)=>`
