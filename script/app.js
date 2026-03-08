@@ -48,7 +48,15 @@ const createElements =(arr)=>{
 
 const displayCard = (cardData, status) => {
   issuesCardContainer.innerHTML = "";
-  cardData.forEach((data) => {
+  if (status === "open") {
+    filteredData = cardData.filter((data) => data.status === "open");
+    console.log(filteredData);
+  } else if (status === "closed") {
+    filteredData = cardData.filter((data) => data.status === "closed");
+  } else {
+    filteredData = cardData;
+  }
+  filteredData.forEach((data) => {
     const cardContent = document.createElement("div");
 
     cardContent.innerHTML = `
