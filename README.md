@@ -1,29 +1,34 @@
-1️⃣ What is the difference between var, let, and const?
-Ans:
-var:এটি পুরোনো পদ্ধতি। এটিকে পুনরায় declare এবং update করা যায়।
-let:এটি নতুন পদ্ধতি। এটিকে update করা যায় কিন্তু আবার declare করা যায় না।
-const:এটি এমন ভ্যারিয়েবল যার value পরিবর্তন করা যায় না।
+# 🛠️ GitHub Issues Tracker
 
-2️⃣ What is the spread operator (...)?
-Ans:
-Spread operator (...) ব্যবহার করা হয় array বা object এর ভ্যালুগুলো আলাদা করতে।
-এটি দিয়ে সহজে array copy করা বা নতুন value যোগ করা যায়।
+A modern, responsive web application designed to streamline project management by tracking and managing GitHub-style issues. Built with a focus on performance, clean UI, and interactive user experience.
 
-3️⃣ What is the difference between map(), filter(), and forEach()?র্র্
-Ans:
-map(): প্রতিটি element পরিবর্তন করে নতুন array তৈরি করে।
-filter(): condition অনুযায়ী element বেছে নতুন array তৈরি করে।
-forEach(): শুধু array এর প্রতিটি element এর উপর loop চালায়, কিন্তু নতুন array return করে না।
+## 🚀 Live Demo
+[View Live Project](https://mdsnbabor330.github.io/Github-Issues-Tracker/)
 
-4️⃣ What is an arrow function?
-Ans:
-Arrow function হলো JavaScript-এ ছোট এবং সহজভাবে function লেখার একটি পদ্ধতি
-const add = (a, b) => {
-  return a + b;
-};
+---
 
-5️⃣ What are template literals?
-Ans:
-Template literals ব্যবহার করা হয় সহজভাবে string তৈরি করার জন্য এবং string এর মধ্যে variable ব্যবহার করার জন্য।
-const name = "Babor";
-const message = `Hello, my name is ${name}`;
+## 🚀 Features
+
+- **🔐 Secure Authentication:** A sleek login interface with demo credentials (`admin` / `admin123`) to access the dashboard.
+- **📊 Interactive Dashboard:** Overview of all project issues with dynamic counts and real-time updates.
+- **🔍 Advanced Search:** Easily find specific issues using the integrated search functionality that filters by title.
+- **🏷️ Smart Filtering:** One-click filters to categorize issues by status: **All**, **Open**, or **Closed**.
+- **🎯 Priority & Category System:**
+    - Visual indicators for **High**, **Medium**, and **Low** priority.
+    - Specialized labels for **Bug**, **Help Wanted**, and **Enhancement** with custom iconography.
+- **📱 Responsive Design:** Fully optimized for all devices, from mobile phones to high-resolution monitors, using Tailwind CSS and DaisyUI.
+- **⚡ Dynamic Content:** Seamless data fetching from a remote API with integrated loading states (Spinners).
+- **🖼️ Detailed View:** Interactive modals provide deep dives into issue specifics, including descriptions, assignees, and timestamps.
+
+---
+
+## 🛠️ Technology Stack
+
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Frontend** | HTML5, Vanilla JavaScript (ES6+) |
+| **Styling** | Tailwind CSS v4, DaisyUI v5 |
+| **Typography** | Geist Sans (Google Fonts) |
+| **Icons** | Custom Asset Package |
+| **API** | RESTful Server Integration |
+
